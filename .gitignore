@@ -1,0 +1,9 @@
+.idea
+.env
+build
+node_modules
+public/*
+!/public/js/
+public/js/**/*.js
+pnpm-lock.yaml
+

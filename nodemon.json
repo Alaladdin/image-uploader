@@ -1,0 +1,9 @@
+{
+  "ext": "ts,json,njk",
+  "ignore": [
+    ".idea",
+    ".git",
+    "node_modules"
+  ],
+  "exec": "ts-node"
+}

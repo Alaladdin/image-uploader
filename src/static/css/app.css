@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drop-zone__preview {
+    width: 480px;
+    height: 360px;
+    object-fit: cover;
+}
