@@ -1,7 +1,7 @@
 {
-  "name": "file-uploader",
+  "name": "image-uploader",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.ts",
   "scripts": {
     "start": "node ./build/index.js",
@@ -15,7 +15,9 @@
     "tw:build": "cross-env NODE_ENV=production tailwind build ./src/static/css/app.css -o ./build/public/css/app.css",
     "njk:build": "copyfiles ./src/views/*.njk ./build/",
     "build": "del-cli ./build && npm-run-all tw:build ts:build njk:build",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "deploy:setup": "pm2 deploy production setup",
+    "deploy:prod": "pm2 deploy ecosystem.config.js production --force"
   },
   "keywords": [
     "express",
