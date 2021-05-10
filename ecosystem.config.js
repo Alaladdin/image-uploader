@@ -6,7 +6,7 @@ module.exports = {
       name: 'image-uploader',
       script: './build/index.js',
       watch: true,
-      ignore_watch: ['node_modules'],
+      ignore_watch: ['node_modules', 'build/public/uploads'],
       env: {
         NODE_ENV: 'development',
       },
